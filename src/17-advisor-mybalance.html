@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./custom.css" rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+</head>
+
+<body class="flex h-screen flex-col bg-neutralDarkest">
+    <div id="header"
+        class="flex flex-row items-center justify-between top-0 left-0 w-full shadow-innerShadow pt-11">
+        <div class="w-full h-12 flex flex-row items-center justify-center">
+            <span class="text-strongLG leading-strongLG font-semibold text-neutralWhite">My Balance</span>
+        </div>
+        <div id="btn-box" class="absolute right-4 w-10 h-12 flex flex-row items-center justify-center">
+            <img src="./assets/images/john.png" alt="user" class="w-10 h-10 rounded-full">
+        </div>
+    </div>
+    <div id="content" class="onlineAdvisor-content-h flex flex-col items-center px-4">
+        <div class="flex flex-col items-center mt-10">
+            <span class="w-full text-neutralLightest text-bodyMD leading-bodyMD tracking-customLetterSpacing text-center">
+                Available
+            </span>
+            <span class="w-full text-brandSecondary text-headingMD leading-headingSM tracking-customLetterSpacing text-center font-semibold">
+                $2051
+            </span>
+        </div>
+        <div class="flex flex-col items-center mt-8">
+            <span class="w-full text-neutralLightest text-bodyMD leading-bodyMD tracking-customLetterSpacing text-center">
+                Last Withdrawal
+            </span>
+            <span class="w-full text-neutralLightest text-strongLG leading-strongLG tracking-customLetterSpacing text-center font-semibold">
+                $842
+            </span>
+        </div>
+        <button
+            class="w-full h-14 bg-brandPrimary text-center text-strongLG leading-strongLG tracking-customLetterSpacing py-4 px-2 rounded-2xl font-semibold mt-8">Withdraw Funds</button>
+    </div>
+    <div id="footer" class="absolute flex flex-row footer-h bottom-0 bg-neutralDarkest w-full shadow-topShadow">
+        <div class="flex flex-col pt-3 pb-2 items-center flex-grow">
+            <img src="./assets/svgs/Work.svg" alt="work" class="footer-icon-w footer-icon-h mb-3">
+            <span class="text-neutralLight text-footerLG leading-footerLG tracking-customLetterSpacing">My Work</span>
+        </div>
+        <div class="flex flex-col pt-3 pb-2 items-center flex-grow">
+            <img src="./assets/svgs/User-dark.svg" alt="advisor" class="footer-icon-w footer-icon-h mb-3">
+            <span class="text-neutralLight text-footerLG leading-footerLG tracking-customLetterSpacing">Advisors</span>
+        </div>
+        <div class="flex flex-col pt-3 pb-2 items-center flex-grow">
+            <img src="./assets/svgs/Balance-white.svg" alt="balance" class="footer-icon-w footer-icon-h mb-3">
+            <span class="text-neutralWhite text-footerLG leading-footerLG tracking-customLetterSpacing">My
+                Balance</span>
+        </div>
+        <div class="flex flex-col pt-3 pb-2 items-center flex-grow">
+            <img src="./assets/svgs/MoreHorizon.svg" alt="more" class="footer-icon-w footer-icon-h mb-3">
+            <span class="text-neutralLight text-footerLG leading-footerLG tracking-customLetterSpacing">More</span>
+        </div>
+    </div>
+</body>
+</html>

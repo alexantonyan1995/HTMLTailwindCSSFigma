@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./custom.css" rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+</head>
+
+<body class="flex h-screen flex-col bg-neutralDarkest">
+    <div id="header" class="flex flex-row items-center pt-60px pb-4 px-4 shadow-innerShadow">
+        <!--avatar-->
+        <div class="mr-4 relative">
+            <img src="./assets/images/john.png" alt="user" class="w-16 h-16 rounded-full">
+            <div
+                class="absolute bg-neutralDarkest top-6 -left-2 w-4 h-4 flex items-center justify-center rounded-full">
+                <div class="bg-brandSecondary w-2 h-2 rounded-full"></div>
+            </div>
+        </div>
+        <!--description-->
+        <div class="flex justify-between flex-grow">
+            <div class="flex flex-col">
+                <!--title-->
+                <div class="flex flex-row items-center">
+                    <span
+                        class="text-neutralWhite text-bodyLG leading-bodyLG tracking-customLetterSpacing mr-1.5 break-words flex-shrink max-w-max font-semibold"
+                        title="user name">Kate Xu Miller</span>
+                </div>
+                <!--subTitle-->
+                <div>
+                    <span
+                        class="text-neutralLightest text-bodyMD leading-bodyMD tracking-customLetterSpacing w-40 break-words">I
+                        solved this problem </span>
+                </div>
+                <!--review-->
+                <div class="flex flex-row items-center">
+                    <div class="flex flex-row items-center mr-2">
+                        <img alt="review" src="./assets/svgs/ReviewStarFull.svg" class="w-3.5">
+                        <img alt="review" src="./assets/svgs/ReviewStarFull.svg" class="w-3.5">
+                        <img alt="review" src="./assets/svgs/ReviewStarFull.svg" class="w-3.5">
+                        <img alt="review" src="./assets/svgs/ReviewStarFull.svg" class="w-3.5">
+                        <img alt="review" src="./assets/svgs/ReviewStarOutlined.svg" class="w-3.5">
+                    </div>
+                    <span class="text-symanticWarning text-bodyMD leading-bodyMD tracking-customLetterSpacing">4.54</span>
+                </div>
+            </div>
+            <!--right arrow-->
+            <div class="flex flex-col justify-center">
+                <img alt="review" src="./assets/svgs/Right-arrow.svg" >
+            </div>
+        </div>
+    </div>
+    <div id="content" class="onlineAdvisor-content-h flex flex-col items-center px-4">
+        <div class="w-full flex flex-row">
+            <div class="p-4 flex flex-col items-center flex-grow">
+                <span class="w-full text-neutralLightest text-bodyMD leading-bodyMD tracking-customLetterSpacing text-center">
+                    Earned Money
+                </span>
+                <span class="w-full text-brandSecondary text-headingMD leading-headingSM tracking-customLetterSpacing text-center font-semibold">
+                    $135
+                </span>
+            </div>
+            <div class="p-4 flex flex-col items-center flex-grow">
+                <span class="w-full text-neutralLightest text-bodyMD leading-bodyMD tracking-customLetterSpacing text-center">
+                    This Week
+                </span>
+                <span class="w-full text-brandSecondary text-headingMD leading-headingSM tracking-customLetterSpacing text-center font-semibold">
+                    $842
+                </span>
+            </div>
+        </div>
+        <div class=" w-full flex flex-col mt-6">
+            <div class="w-full bg-neutralDark p-4 flex flex-col rounded-t-2xl">
+                <div id="price-input" class="flex flex-col items-center py-4 bg-neutralDark w-full">
+                    <span
+                        class="w-full text-neutralLightest text-bodyMD leading-bodyMD tracking-customLetterSpacing text-center px-4">
+                        Your current price (15 min call)
+                    </span>
+                    <div class="flex bg-neutralDarkest rounded-lg p-2 mt-2 justify-between">
+                        <button class="flex justify-center items-center w-10 h-10 rounded bg-neutralDark">
+                            <img src="./assets/svgs/Minuse.svg" alt="minuse" class="">
+                        </button>
+                        <div id="search" class="px-4">
+                            <div class="h-full relative rounded-lg px-2 flex flex-row">
+                                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                                    <span class="text-brandSecondary outline-none text-headingMD leading-headingMD font-semibold tracking-customLetterSpacing">$</span>
+                                </div>
+                                <input type="text" name="price" id="price" value="45643"
+                                    class="block w-full rounded-md bg-neutralDarkest text-brandSecondary outline-none text-headingMD leading-headingMD font-semibold tracking-customLetterSpacing px-4 input-text-price-max-w">
+                            </div>
+                        </div>
+                        <button class="flex justify-center items-center w-10 h-10 rounded bg-neutralDark">
+                            <img src="./assets/svgs/Plus.svg" alt="minuse" class="">
+                        </button>
+                    </div>
+                </div>        
+            </div>
+            <div class="w-full bg-brandSecondary p-4 rounded-b-2xl text-center">
+                <span class="text-strongLG leading-strongLG font-semibold tracking-customLetterSpacing">Go Online</span>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="absolute flex flex-row footer-h bottom-0 bg-neutralDarkest w-full shadow-topShadow">
+        <div class="flex flex-col pt-3 pb-2 items-center flex-grow">
+            <img src="./assets/svgs/Work-white.svg" alt="work" class="footer-icon-w footer-icon-h mb-3">
+            <span class="text-neutralWhite text-footerLG leading-footerLG tracking-customLetterSpacing">My Work</span>
+        </div>
+        <div class="flex flex-col pt-3 pb-2 items-center flex-grow">
+            <img src="./assets/svgs/User-dark.svg" alt="advisor" class="footer-icon-w footer-icon-h mb-3">
+            <span class="text-neutralLight text-footerLG leading-footerLG tracking-customLetterSpacing">Advisors</span>
+        </div>
+        <div class="flex flex-col pt-3 pb-2 items-center flex-grow">
+            <img src="./assets/svgs/Balance.svg" alt="balance" class="footer-icon-w footer-icon-h mb-3">
+            <span class="text-neutralLight text-footerLG leading-footerLG tracking-customLetterSpacing">My
+                Balance</span>
+        </div>
+        <div class="flex flex-col pt-3 pb-2 items-center flex-grow">
+            <img src="./assets/svgs/MoreHorizon.svg" alt="more" class="footer-icon-w footer-icon-h mb-3">
+            <span class="text-neutralLight text-footerLG leading-footerLG tracking-customLetterSpacing">More</span>
+        </div>
+    </div>    
+</body>
+
+</html>

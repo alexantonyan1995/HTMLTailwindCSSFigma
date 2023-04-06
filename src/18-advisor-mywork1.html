@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./custom.css" rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+</head>
+
+<body class="flex h-screen flex-col bg-neutralDarkest">
+    <div id="header"
+        class="flex flex-row items-center bg-brandSecondary justify-between top-0 left-0 w-full shadow-innerShadow pt-11">
+        <div class="w-full advisor-mywork-h flex flex-row items-center justify-center">
+            <span class="text-strongLG leading-strongLG font-semibold text-alphaText">You're Online!</span>
+        </div>
+        <div id="btn-box"
+            class="absolute right-4 w-11 h-11 flex flex-row items-center justify-center border-4 border-neutralDarkest rounded-full bg-symanticDanger">
+            <img src="./assets/svgs/PowerOff-white.svg" alt="poweroff" class="">
+        </div>
+    </div>
+    <div id="content" class="onlineAdvisor-content-h flex flex-col items-center">
+        <div id="price-input" class="flex flex-col items-center py-4 bg-neutralDark w-full border-b border-solid border-b-neutralDarkest">
+            <span
+                class="w-full text-neutralLightest text-bodyMD leading-bodyMD tracking-customLetterSpacing text-center px-4">
+                Your current price (15 min call)
+            </span>
+            <div class="flex bg-neutralDarkest rounded-lg p-2 mt-2 justify-between">
+                <button class="flex justify-center items-center w-10 h-10 rounded bg-neutralDark">
+                    <img src="./assets/svgs/Minuse.svg" alt="minuse" class="">
+                </button>
+                <div id="search" class="px-4">
+                    <div class="h-full relative rounded-lg px-2 flex flex-row">
+                        <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                            <span class="text-brandSecondary outline-none text-headingMD leading-headingMD font-semibold tracking-customLetterSpacing">$</span>
+                        </div>
+                        <input type="text" name="price" id="price" value="45643"
+                            class="block w-full rounded-md bg-neutralDarkest text-brandSecondary outline-none text-headingMD leading-headingMD font-semibold tracking-customLetterSpacing px-4 input-text-price-max-w">
+                    </div>
+                </div>
+                <button class="flex justify-center items-center w-10 h-10 rounded bg-neutralDark">
+                    <img src="./assets/svgs/Plus.svg" alt="minuse" class="">
+                </button>
+            </div>
+        </div>
+        <!--sub header-->
+        <div id="content-online-header" class="w-full flex flex-row items-start h-10 pt-4 px-4 pb-2 bg-neutralDark">
+            <span class="uppercase text-neutralLightest text-bodySM leading-bodySM font-semibold">
+                session requests
+            </span>
+        </div>
+        <div class="flex flex-col justify-center px-4">
+            <div class="pt-2 flex justify-center"> 
+                <img src="./assets/svgs/Wifi.svg" alt="wifi" class="mt-11">
+            </div>
+            <div class="mt-6 flex flex-col items-center">
+                <span class="mt-0.5 text-neutralWhite text-bodyXL, leading-bodyXL tracking-customLetterSpacing">You're online...</span>
+                <span class="text-neutralLightest text-bodyMD leading-bodyMD tracking-customLetterSpacing">Your services are visible to users now</span>
+            </div>
+        </div>
+    </div>
+    <div id="footer"
+        class="absolute flex flex-row footer-h bottom-0 bg-neutralDarkest w-full shadow-topShadow">
+        <div class="flex flex-col pt-3 pb-2 items-center flex-grow">
+            <img src="./assets/svgs/Work-white.svg" alt="work" class="footer-icon-w footer-icon-h mb-3">
+            <span class="text-neutralWhite text-footerLG leading-footerLG tracking-customLetterSpacing">My Work</span>
+        </div>
+        <div class="flex flex-col pt-3 pb-2 items-center flex-grow">
+            <img src="./assets/svgs/User-dark.svg" alt="advisor" class="footer-icon-w footer-icon-h mb-3">
+            <span class="text-neutralLight text-footerLG leading-footerLG tracking-customLetterSpacing">Advisors</span>
+        </div>
+        <div class="flex flex-col pt-3 pb-2 items-center flex-grow">
+            <img src="./assets/svgs/Balance.svg" alt="balance" class="footer-icon-w footer-icon-h mb-3">
+            <span class="text-neutralLight text-footerLG leading-footerLG tracking-customLetterSpacing">My
+                Balance</span>
+        </div>
+        <div class="flex flex-col pt-3 pb-2 items-center flex-grow">
+            <img src="./assets/svgs/MoreHorizon.svg" alt="more" class="footer-icon-w footer-icon-h mb-3">
+            <span class="text-neutralLight text-footerLG leading-footerLG tracking-customLetterSpacing">More</span>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./custom.css" rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+</head>
+
+<body class="callPage-body flex h-screen flex-col">
+    <div id="header"
+        class="flex flex-row items-center justify-between w-full px-4 pt-11">
+        <div class="h-12 flex flex-row items-center justify-center">
+            <img src="./assets/svgs/Left-arrow.svg" alt="left arrow" class="text-neutralWhite" width="10px"
+                height="18px">
+        </div>
+        <div class="h-11 flex flex-row items-center justify-between py-1 pl-4 pr-1 bg-neutralDarkest callPage-alarm-rounded">
+            <div class="py-0.5 flex flex-col mr-3">
+                <span class=" text-neutralWhite text-strongSM leading-strongSM font-semibold">12:43</span>
+            </div>
+            <span class="h-9 p-2 bg-symanticDanger text-neutralWhite rounded-3xl font-semibold text-strongMD leading-strongMD">
+                Stop
+            </span>
+        </div>
+    </div>
+    <div id="content" class="flex-grow flex flex-col items-center p-4">
+    </div>
+    <div id="footer" class="flex flex-col bottom-0 w-full px-4 pb-9">
+        <div class="relative w-full">
+            <div class="relative w-full callPage-user-photo-h">
+                <img src="./assets/IMG_1422-2.jpg" alt="user" class="absolute right-0 rounded-lg callPage-user-photo-w callPage-user-photo-h">
+            </div>
+            <div
+                class="w-full flex justify-around relative mt-6">
+                <button class="callPage-callBtn-w callPage-callBtn-h flex justify-center items-center rounded-full bg-symanticDanger"><img src="./assets/svgs/camera-nouse.svg" alt="camera-nouse"></button>
+                <button class="callPage-callBtn-w callPage-callBtn-h flex justify-center items-center rounded-full bg-symanticDanger"><img src="./assets/svgs/recorder-nouse.svg" alt="recorder"></button>
+                <button class="callPage-callBtn-w callPage-callBtn-h flex justify-center items-center rounded-full bg-neutralDark"><img src="./assets/svgs/camera-rotate.svg" alt="camera-rotate"></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

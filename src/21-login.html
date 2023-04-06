@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./custom.css" rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+</head>
+
+<body class="flex h-screen flex-col bg-neutralDarkest">
+    <div id="header" class="flex flex-row justify-center w-full pt-11">
+    </div>
+    <div id="content" class="flex flex-col pt-12 pb-12 px-4 overflow-auto">
+        <div class="w-full flex flex-col pt-2">
+            <span class="w-full text-brandSecondary text-strongLG leading-strongLG tracking-customLetterSpacing font-semibold">Help on demand</span>
+            <span class="w-full mt-4 text-neutralWhite text-headingXL leading-headingXL tracking-customLetterSpacing font-semibold">Pay a few bucks for instant help with anything.</span>
+        </div>
+        <div id="fund-input" class="flex relative mt-1 rounded-md">
+            <div id="content-pay-input" class="pt-8 pb-4 w-full flex">
+                <div class="relative rounded-lg py-3 px-3 flex flex-row bg-neutralDark input-text-field-h countryCode-input-w input-text-field-border-w border-neutralMid border-solid mr-2">
+                    <input type="text" name="price" id="price" placeholder="+1"
+                        class="block w-full rounded-md bg-neutralDark text-white outline-none tracking-customLetterSpacing">
+                </div>
+                <div class="relative rounded-lg py-3 px-3 flex flex-row bg-neutralDark input-text-field-h input-text-field-border-w border-neutralMid border-solid">
+                    <input type="text" name="price" id="price" placeholder="Phone"
+                        class="block w-full rounded-md bg-neutralDark pr-12 text-white outline-none tracking-customLetterSpacing">
+                </div>
+            </div>            
+        </div>
+        <span class="text-bodyLG leading-bodyLG tracking-customLetterSpacing text-neutralLightest">We will send verification code to this number</span>
+        <button
+            class="w-full h-14 text-neutralWhite bg-brandPrimary text-center text-strongLG leading-strongLG tracking-customLetterSpacing py-4 px-2 rounded-2xl font-semibold mt-12">
+            Continue
+        </button>
+        <div class="flex justify-center mt-4 pt-10 pb-4">
+            <span class="text-bodyLG leading-bodyLG tracking-customLetterSpacing text-neutralLightest text-center">Changed phone number? <br>Restore access</span>
+        </div>
+    </div>
+</body>
+
+</html>

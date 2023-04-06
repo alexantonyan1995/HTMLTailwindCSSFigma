@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./custom.css" rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+</head>
+
+<body class="flex h-screen flex-col bg-neutralDarkest">
+    <div id="header"
+        class="flex flex-row items-center justify-between w-full shadow-innerShadow pt-11">
+        <div class="w-full h-12 flex flex-row items-center justify-center">
+            <span class="text-strongLG leading-strongLG font-semibold text-neutralWhite">Add Money</span>
+        </div>
+        <div id="btn-box" class="absolute right-4 w-10 h-12 flex flex-row items-center justify-center">
+            <img src="./assets/images/john.png" alt="user" class="w-10 h-10 rounded-full">
+        </div>
+    </div>
+    <div id="content" class="onlineAdvisor-content-h flex flex-col items-center">
+        <div class="flex flex-row items-start h-10 w-full pt-4 px-4 pb-2 bg-neutralDark">
+            <span class="uppercase text-neutralLightest text-bodySM leading-bodySM font-semibold">
+                How much would you like to add?
+            </span>
+        </div>
+        <div class="pt-4 px-4 pb-7 w-full">
+            <div class="relative rounded-lg py-3 px-3 flex flex-row bg-neutralDark input-text-field-h input-text-field-border-w border-neutralMid border-solid">
+                <input type="text" name="price" id="price"
+                    class="block w-full rounded-md bg-neutralDark pr-12 text-white outline-none tracking-customLetterSpacing">
+            </div>
+        </div>
+        <div class="flex flex-row items-start h-10 w-full pt-4 px-4 pb-2 bg-neutralDark">
+            <span class="uppercase text-neutralLightest text-bodySM leading-bodySM font-semibold">
+                Select Payment Method
+            </span>
+        </div>
+        <div class="pt-4 px-4 w-full">
+            <div class="flex items-center addMoney-payoption-box-h w-full addMoney-payoption-box-h rounded-lg bg-neutralDark p-4">
+                <label class="radio-container">
+                    <input type="radio" name="fav_language" value="HTML" class="mr-2 customed-radius">
+                    <span class="checkmark"></span>
+                </label>
+                <img src="./assets/svgs/Card1.svg" alt="card1" class="mr-2">
+                <span class="text-neutralWhite text-bodyMD leading-bodyMD tracking-customLetterSpacing">VISA ending *4858</span>
+            </div>
+            <div class="flex items-center addMoney-payoption-box-h w-full addMoney-payoption-box-h rounded-lg bg-neutralDark p-4 mt-2">
+                <label class="radio-container">
+                    <input type="radio" name="fav_language" value="HTML" class="mr-2 customed-radius">
+                    <span class="checkmark"></span>
+                </label>
+                <img src="./assets/svgs/Card2.svg" alt="card1" class="mr-2">
+                <span class="text-neutralWhite text-bodyMD leading-bodyMD tracking-customLetterSpacing">MasterCard ending *5993</span>
+            </div>
+            <div class="flex items-center w-full h-9 pl-4 my-2 ">
+                <img src="./assets/svgs/Plus.svg" alt="plus" class="mr-2"> 
+                <span class="text-neutralWhite text-bodyMD leading-bodyMD tracking-customLetterSpacing">Add a new card</span>
+            </div>
+
+            <button
+                class="w-full h-14 bg-brandSecondary text-center text-strongLG leading-strongLG tracking-customLetterSpacing py-4 px-2 rounded-2xl font-semibold">Complete Payment</button>
+        </div>
+    </div>
+</body>
+
+</html>

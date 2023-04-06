@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./custom.css" rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+</head>
+
+<body class="callPage-body flex h-screen flex-col">
+    <div id="header"
+        class="flex flex-row items-center justify-between w-full px-4 pt-11">
+        <div class="h-12 flex flex-row items-center justify-center">
+            <img src="./assets/svgs/Left-arrow.svg" alt="left arrow" class="text-neutralWhite" width="10px"
+                height="18px">
+        </div>
+        <div class="h-11 flex flex-row items-center justify-between py-1 pl-4 pr-1 bg-neutralDarkest callPage-alarm-rounded">
+            <div class="py-0.5 flex flex-col mr-3">
+                <span class=" text-neutralWhite text-bodySM leading-bodySM font-semibold">Free Intro!</span>
+                <div>
+                    <span class="text-neutralWhite text-bodySM leading-bodySM font-semibold">You will be charged in</span>
+                    <span class="text-brandSecondary text-bodySM leading-bodySM font-semibold">1:45</span>
+                </div>
+            </div>
+            <span class="h-9 p-2 bg-symanticDanger text-neutralWhite rounded-3xl font-semibold text-strongMD leading-strongMD">
+                Stop Now
+            </span>
+        </div>
+    </div>
+    <div id="content" class="flex-grow flex flex-col items-center p-4">
+    </div>
+    <div id="footer" class="flex flex-col bottom-0 w-full px-4 pb-9">
+        <div class="relative w-full">
+            <div class="relative w-full callPage-user-photo-h">
+                <img src="./assets/IMG_1422-2.jpg" alt="user" class="absolute right-0 rounded-lg callPage-user-photo-w callPage-user-photo-h">
+            </div>
+            <div
+                class="w-full flex justify-around relative mt-6">
+                <button class="callPage-callBtn-w callPage-callBtn-h flex justify-center items-center rounded-full bg-neutralDark"><img src="./assets/svgs/camera.svg" alt="camera"></button>
+                <button class="callPage-callBtn-w callPage-callBtn-h flex justify-center items-center rounded-full bg-neutralDark"><img src="./assets/svgs/recorder.svg" alt="camera"></button>
+                <button class="callPage-callBtn-w callPage-callBtn-h flex justify-center items-center rounded-full bg-neutralDark"><img src="./assets/svgs/camera-rotate.svg" alt="camera"></button>
+            </div>
+        </div>
+    </div>
+    <div class="w-full h-full flex flex-col px-4 justify-center modal">
+        <div class="w-full flex flex-col justify-between">
+            <div class=" w-full flex flex-col">
+                <div class="w-full bg-neutralDark p-4 flex flex-col rounded-t-2xl">
+                    <span class="text-neutralWhite text-strongLG leading-strongLG font-semibold tracking-customLetterSpacing">
+                        Your free intro has been ended.
+                    </span>
+                    <div class="mt-2">
+                        <span class="text-neutralWhite text-bodyMD leading-bodyMD tracking-customLetterSpacing">Would you like to continue this call? Your balance will be charged </span>
+                        <span class="text-brandSecondary text-bodyMD leading-bodyMD tracking-customLetterSpacing">$15 for the rest 13 minutes</span>                        
+                    </div>
+                </div>
+                <div class="w-full bg-brandSecondary p-4 rounded-b-2xl">
+                    <span class="text-strongLG leading-strongLG font-semibold tracking-customLetterSpacing">Continue and Pay $15</span>
+                </div>
+            </div>
+            <span class="w-full mt-14 py-4 px-2 rounded-3xl bg-neutralMid text-center text-neutralWhite text-bodyMD leading-bodyMD tracking-customLetterSpacing">
+                No, I want to stop now
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>
